@@ -9,6 +9,7 @@ that gets loaded on demand).
 | Skill | Description |
 |---|---|
 | [`kubeflow_trainer`](kubeflow_trainer/SKILL.md) | Kubeflow Trainer v2 — TrainJob/TrainingRuntime/ClusterTrainingRuntime CRDs, the Kubeflow Python SDK (TrainerClient, CustomTrainer, BuiltinTrainer), per-framework guides (PyTorch, DeepSpeed, JAX, MLX, XGBoost, Megatron-Core, TorchTune, Flux), and migration from Training Operator v1 |
+| [`slurm`](slurm/SKILL.md) | SLURM batch scheduling — sbatch/srun/salloc/squeue/sacct/sinfo, job arrays, dependencies, environment modules, plus Bayes Cluster (UIC-STAT USBC) specifics: partitions, access/VPN/2FA, quotas, software installs |
 
 ## Usage
 
