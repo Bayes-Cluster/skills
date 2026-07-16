@@ -9,6 +9,7 @@ that gets loaded on demand).
 | Skill | Description |
 |---|---|
 | [`kubeflow_trainer`](kubeflow_trainer/SKILL.md) | Kubeflow Trainer v2 — TrainJob/TrainingRuntime/ClusterTrainingRuntime CRDs, the Kubeflow Python SDK (TrainerClient, CustomTrainer, BuiltinTrainer), per-framework guides (PyTorch, DeepSpeed, JAX, MLX, XGBoost, Megatron-Core, TorchTune, Flux), and migration from Training Operator v1 |
+| [`kubeflow_ops`](kubeflow_ops/SKILL.md) | Kubeflow Trainer operations — cluster readiness/GPU inventory/model-fit estimation, the three submission modes, TrainJob monitoring (status/logs/events), suspend/resume/cleanup, error-to-fix troubleshooting, platform fixes (OpenShift SCC, EKS/GKE, GPU tolerations, NCCL env), and environment awareness (Notebook GPU, PVC capacity, namespace egress). A dependency-free kubectl + SDK replacement for the kubeflow/mcp-server |
 | [`slurm`](slurm/SKILL.md) | SLURM batch scheduling — sbatch/srun/salloc/squeue/sacct/sinfo, job arrays, dependencies, environment modules, plus Bayes Cluster (UIC-STAT USBC) specifics: partitions, access/VPN/2FA, quotas, software installs |
 
 ## Usage
