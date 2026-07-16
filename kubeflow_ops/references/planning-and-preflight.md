@@ -57,14 +57,14 @@ echo "== Default runtimes ==" ;
 
 Interpreting failures:
 
-- **MISSING trainjobs CRD** — Trainer isn't installed. See `kubeflow-trainer` skill → Install.
+- **MISSING trainjobs CRD** — Trainer isn't installed. See the install steps in [trainjob-runtime-api.md](trainjob-runtime-api.md).
 - **controller unhealthy** — `kubectl logs -n kubeflow-system deploy/kubeflow-trainer-controller-manager`.
 - **MISSING jobset** — TrainJobs build a JobSet underneath; without the JobSet controller they'll
   never create pods. Install JobSet before proceeding.
 - **no GPU plugin** — pods requesting `nvidia.com/gpu` will stay `FailedScheduling`. Either this is
   a CPU-only cluster (use `gloo`, not `nccl`) or the GPU operator isn't installed.
 - **NO runtimes** — a TrainJob with no `runtimeRef` target has nothing to render against. Install
-  the community defaults or author your own (see `kubeflow-trainer` → builtin-runtimes).
+  the community defaults or author your own (see [builtin-runtimes.md](builtin-runtimes.md)).
 
 ---
 

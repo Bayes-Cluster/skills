@@ -222,7 +222,7 @@ Operational notes:
 - Never carry `trainer.kubeflow.org/webhook-validation: disabled` on a runtime you author — that
   label opts out of admission validation and is only for the community's pre-validated built-ins.
 - Editing a shared runtime affects every TrainJob referencing it; prefer `runtimePatches` at the
-  TrainJob level for per-job overrides (see `kubeflow-trainer` → trainjob-runtime-api.md).
+  TrainJob level for per-job overrides (see [trainjob-runtime-api.md](trainjob-runtime-api.md)).
 
 ---
 

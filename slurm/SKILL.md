@@ -1,6 +1,6 @@
 ---
 name: slurm
-description: SLURM workload manager for HPC batch job scheduling — sbatch/srun/salloc job submission, squeue/sacct/sinfo monitoring, partitions, job arrays, dependencies, and environment modules. Includes Bayes Cluster (UIC-STAT USBC) specifics — node/partition layout, SSH+VPN+2FA access, home directory quotas, module system, conda/proxychains software installs. Use when writing or debugging a SLURM batch script, running an interactive HPC session, checking job/queue/node status, or working on the Bayes cluster specifically. For the newer Kubernetes/Kubeflow-based "Chebyshev" platform Bayes is migrating to, use the kubeflow_trainer skill instead.
+description: SLURM workload manager for HPC batch job scheduling — sbatch/srun/salloc job submission, squeue/sacct/sinfo monitoring, partitions, job arrays, dependencies, and environment modules. Includes Bayes Cluster (UIC-STAT USBC) specifics — node/partition layout, SSH+VPN+2FA access, home directory quotas, module system, conda/proxychains software installs. Use when writing or debugging a SLURM batch script, running an interactive HPC session, checking job/queue/node status, or working on the Bayes cluster specifically. For the newer Kubernetes/Kubeflow-based "Chebyshev" platform Bayes is migrating to, use the kubeflow-ops skill instead.
 version: 1.0.0
 author: Terence Liu
 license: Apache-2.0

@@ -2,7 +2,7 @@
 
 Replaces the MCP `fine_tune`, `run_custom_training`, and `run_container_training` tools. Three ways
 to create a `TrainJob`, mapped to their `TrainerClient` SDK equivalents. For full dataclass field
-detail see `kubeflow-trainer/references/python-sdk.md`; this file covers the *operational* choice,
+detail see [python-sdk.md](python-sdk.md); this file covers the *operational* choice,
 the confirm discipline, scheduling parameters, and runtime gotchas.
 
 ---
@@ -144,7 +144,7 @@ reproducible environment. The image must already contain the framework and entry
 not install packages into it.
 
 Via `kubectl` (raw YAML), this is just a `TrainJob` whose `spec.trainer` uses `image`/`command`
-instead of `func` — see `kubeflow-trainer/references/trainjob-runtime-api.md`.
+instead of `func` — see [trainjob-runtime-api.md](trainjob-runtime-api.md).
 
 ---
 
@@ -202,8 +202,8 @@ kubectl get clustertrainingruntime -o custom-columns='NAME:.metadata.name,FW:.me
 
 The framework label (`torch|deepspeed|jax|mlx|xgboost|torchtune`) tells the SDK how to launch the
 job. A custom runtime missing this label will be invisible to `TrainerClient` — the SDK won't list
-it. (This is a common failure when authoring your own runtime; see `kubeflow-trainer` skill →
-builtin-runtimes.)
+it. (This is a common failure when authoring your own runtime; see
+[builtin-runtimes.md](builtin-runtimes.md).)
 
 ## Parameter rules that aren't inferable
 
